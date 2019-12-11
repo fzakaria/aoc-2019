@@ -169,6 +169,16 @@ module Day09
 
   end
 
+  module Part2
+
+    memory = File.read("09.txt").split(",").map(&:strip).map(&:to_i)
+    Part1.padright!(memory, 10_000, 0)
+    Part1.int_code(memory, 2)
+
+
+
+  end
+
 
 
 end
